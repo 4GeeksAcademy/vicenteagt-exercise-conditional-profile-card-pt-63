@@ -36,9 +36,13 @@ function render(variables = {}) {
           <h1>
           ${variables.name == null ? "Lucy" : variables.name} ${
     variables.lastName == null ? "Otelle" : variables.lastName
-  }</h1>
-          <h2>${variables.role == null ? "Web Developer" : variables.role}</h2>
-          <h3>${variables.city == null ? "Miami" : variables.city} ${
+  }
+  </h1>
+          <h2>
+          ${variables.role == null ? "Web Developer" : variables.role}
+          </h2>
+          <h3>
+          ${variables.city == null ? "Miami" : variables.city} ${
     variables.country == null ? "USA" : variables.country
   } </h3>
           <ul class=${
@@ -46,20 +50,28 @@ function render(variables = {}) {
               ? "position-left"
               : variables.socialMediaPosition
           }>
-<li><a href="https://twitter.com/${
+<li>
+<a href="https://twitter.com/${
     variables.twitter == null ? "4geeksacademy" : variables.twitter
-  }"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/${
+  }"><i class="fab fa-twitter"></i></a>
+  </li>
+            <li>
+            <a href="https://github.com/${
               variables.github == null ? "4geeksacademy" : variables.github
-            }"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/${
+            }"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+            <a href="https://linkedin.com/school/${
               variables.linkedin == null ? "4geeksacademy" : variables.linkedin
-            }"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/${
+            }"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+            <a href="https://instagram.com/${
               variables.instagram == null
                 ? "4geeksacademy"
                 : variables.instagram
-            }"><i class="fab fa-instagram"></i></a></li>
+            }"><i class="fab fa-instagram"></i></a>
+            </li>
           </ul>
         </div>
     `;
